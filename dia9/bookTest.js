@@ -1,0 +1,20 @@
+"use strict";
+// Reto 5
+exports.__esModule = true;
+var book_1 = require("./book");
+var libro = new book_1.Book("Mae mia willy", 471, "Es un libro muy interesante, con muy buen contenido.", "Petter el Anguila", "Debolsillo");
+var libro2 = new book_1.Book("Niña, comete el pollo", 48, "Es malísimo, no lo leas", "Belen Esteban", "Catedra");
+var misLibros = [libro, libro2];
+console.log(misLibros);
+// misLibros.toString();
+libro.setTitle("Mi libro");
+libro.setNpages(22);
+libro.setIss("Mola");
+libro.setIAuthor("Yo mismo");
+libro.setEditorial("Nadie");
+console.log(libro2.getTitle());
+console.log(libro.getNpages());
+console.log(libro.getIss());
+console.log(libro.getIAuthor());
+console.log(libro.getEditorial());
+console.log(misLibros);

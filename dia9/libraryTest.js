@@ -1,0 +1,16 @@
+"use strict";
+exports.__esModule = true;
+var book_1 = require("./book");
+var library_1 = require("./library");
+var libro = new book_1.Book("12 Años de esclavitud", 1231, "Es un libro muy interesante, con muy buen contenido.", "Lagartijo", "Debolsillo");
+var libro2 = new book_1.Book("Mae mia willy", 471, "Es un libro muy interesante, con muy buen contenido.", "Petter el Anguila", "Debolsillo");
+var libro3 = new book_1.Book("Niña, comete el pollo", 48, "Es malísimo, no lo leas", "Belen Esteban", "Catedra");
+//   let libros: Library = new Library([libro, libro2, libro3],"Calle Alcachofa","Un tio mu loco");
+var libros = [];
+libros.push(libro);
+libros.push(libro2);
+libros.push(libro3);
+var miLibreria = new library_1.Library(libros, "Calle Alcachofa", "Un tio mu loco");
+console.log(miLibreria.toString());
+// miLibreria.findByAUthor("Belen Esteban");
+// console.log(libros.toString());
